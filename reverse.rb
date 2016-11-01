@@ -17,5 +17,15 @@ class Array
             end               
         end
         result
-    end        
+    end
+
+    def my_rindex(element)
+        result = nil
+        self.each_with_index do |value, index|
+            if value == element
+                result = index
+            end               
+        end
+        result
+    end     
 end
