@@ -13,7 +13,12 @@ class TestMyReverse < Minitest::Test
     end
 
     def test_my_index_for_empty_array
-        arr = []
-        assert_equal(nil, arr.my_index("a"))
+        array = []
+        assert_equal(nil, array.my_index("a"))
+    end
+
+    def test_of_a
+        array = ["a", "b", "c"]
+        assert_equal(1, array.my_index("b"))
     end
 end
