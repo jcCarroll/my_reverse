@@ -18,7 +18,8 @@ class TestMyReverse < Minitest::Test
     end
 
     def test_of_a
-        array = ["a", "b", "c"]
+        array = ["a", "b", "c", "d", "d"]
         assert_equal(1, array.my_index("b"))
+        assert_equal(3, array.my_index("d"))
     end
 end

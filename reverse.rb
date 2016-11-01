@@ -13,6 +13,7 @@ class Array
         self.each_with_index do |value, index|
             if value == element
                 result = index
+                break
             end               
         end
         result
